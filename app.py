@@ -12,6 +12,8 @@ def analyze():
     text = data.get('text')
     # Hier die Logik zur Stimmungsanalyse implementieren
     # Nutzen Sie dein Modell
+    if not text:
+        return jsonify({'error': 'Fehlender Text zum Analysieren'}), 400
     prediction = model.predict([text])[0]
     return jsonify({'stimmung': prediction})
 
