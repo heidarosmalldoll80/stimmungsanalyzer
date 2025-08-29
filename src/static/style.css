@@ -1,0 +1,4 @@
+body { font-family: Arial, sans-serif; }
+#inputText { width: 100%; height: 100px; }
+#analyzeButton { margin-top: 10px; }
+#result { margin-top: 20px; font-weight: bold; }
